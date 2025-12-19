@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+jax[cuda12]
+flax
+optax
+opencv-python
+nltk
