@@ -24,6 +24,7 @@ cd [name-of-environment]
 source .\bin\activate
 ```
 
+Install required packages:
 ```powershell
 pip install -r requirements.txt
 ```
