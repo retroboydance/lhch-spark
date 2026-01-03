@@ -24,7 +24,6 @@ def create_params_tree(in_dim, out_dim, scale=1e-2):
     return dict(weight = scale * jnp.ones((in_dim, out_dim)), bias = scale * jnp.ones((out_dim,)))
 
 def init_layer_params(key, meta_params):
-    ##assert len(meta_params) == 2
     keys_tree = random_split_like_tree(key, meta_params)
     return tree_map(lambda l, k: l * random.normal(k, l.shape), meta_params, keys_tree)
 
